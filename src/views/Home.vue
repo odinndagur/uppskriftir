@@ -6,9 +6,10 @@
         <div class="day">
         <b style="text-align:left;">{{day.day}}</b> 
         <br/>
-        <span style="text-align:right;">{{day.recipe}}</span>
+        <span style="text-align:right;">{{day.recipe}}
         <input type="checkbox" id="checkbox" v-model="day.locked">
-        <label for="checkbox">Lock</label>
+        <label for="checkbox"></label>
+        </span>
         </div>
         </li>
     </ul>
