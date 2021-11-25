@@ -67,7 +67,7 @@ export default {
   methods: {
     randomMenu(){
       this.menu.forEach(day=>{
-        day.recipe = this.recipes[Math.floor(Math.random(this.recipes.length))].recipe;
+        day.recipe = this.recipes[Math.floor(Math.random()*this.recipes.length)].recipe;
       })
     }
   },
