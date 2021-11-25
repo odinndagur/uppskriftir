@@ -4,7 +4,9 @@
     <ul>
       <li v-for="day in menu" :key="day.day"> 
         <div class="day">
-        <b style="text-align:left;">{{day.day}}</b>  <span style="text-align:right;">{{day.recipe}}</span>
+        <b style="text-align:left;">{{day.day}}</b> 
+        <br/>
+        <span style="text-align:right;">{{day.recipe}}</span>
         </div>
         </li>
     </ul>
