@@ -27,35 +27,37 @@ export default {
     return {
       title: "Uppskriftir",
       recipes: [
-        {
-          recipe: "Oumph pasta",
-          id: "0",
-        },
+          "Oumph pasta",
+          "Vefjur með like chicken",
+          "Pítur",
+          "Kaupa mat",
+          "Pizza",
+          "Tillur",
       ],
       menu: [
         {
           day: "Mánudagur",
-          recipe: 'Oumph pasta',
+          recipe: '',
         },
         {
           day: "Þriðjudagur",
-          recipe: 'Vefjur með like chicken',
+          recipe: '',
         },
         {
           day: "Miðvikudagur",
-          recipe: 'Pítur',
+          recipe: '',
         },
         {
           day: "Fimmtudagur",
-          recipe: 'Kaupa mat',
+          recipe: '',
         },
         {
           day: "Föstudagur",
-          recipe: 'Pizza',
+          recipe: '',
         },
         {
           day: "Laugardagur",
-          recipe: 'Tillur',
+          recipe: '',
         },
         {
           day: "Sunnudagur",
