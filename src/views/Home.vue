@@ -7,6 +7,8 @@
         <b style="text-align:left;">{{day.day}}</b> 
         <br/>
         <span style="text-align:right;">{{day.recipe}}</span>
+        <input type="checkbox" id="checkbox" v-model="day.locked">
+        <label for="checkbox">Lock</label>
         </div>
         </li>
     </ul>
@@ -38,30 +40,37 @@ export default {
         {
           day: "Mánudagur",
           recipe: '',
+          locked: false,
         },
         {
           day: "Þriðjudagur",
           recipe: '',
+          locked: false,
         },
         {
           day: "Miðvikudagur",
           recipe: '',
+          locked: false,
         },
         {
           day: "Fimmtudagur",
           recipe: '',
+          locked: false,
         },
         {
           day: "Föstudagur",
           recipe: '',
+          locked: false,
         },
         {
           day: "Laugardagur",
           recipe: '',
+          locked: false,
         },
         {
           day: "Sunnudagur",
           recipe: 'Húsalind',
+          locked: false,
         },
       ],
     };
@@ -69,7 +78,9 @@ export default {
   methods: {
     randomMenu(){
       this.menu.forEach(day=>{
+        if(!day.locked){
         day.recipe = this.recipes[Math.floor(Math.random(1)*this.recipes.length)];
+        }
       })
     }
   },
