@@ -7,8 +7,8 @@
         <b style="text-align:left;">{{day.day}}</b> 
         <br/>
         <span style="text-align:right;">{{day.recipe}}
-        <input type="checkbox" id="checkbox" v-model="day.locked">
-        <label for="checkbox"></label>
+        <input type="checkbox" :id="day.day" v-model="day.locked">
+        <label :for="day.day"></label>
         </span>
         </div>
         </li>
