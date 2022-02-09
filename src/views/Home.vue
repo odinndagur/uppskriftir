@@ -22,8 +22,8 @@
     </ul>
   </div>
 
-  <div>
-    <button @click="randomMenu">random</button>
+  <div class="randombtn" @click="randomMenu">
+    Randomize
   </div>
   </div>
 </template>
@@ -128,7 +128,10 @@ span.dayrecipe {
   width: 20rem;
 } */
 
-
+.randombtn{
+  background: rgba(100,100,100,100);
+  margin:auto;
+}
 
 li {
   list-style-type:none;
