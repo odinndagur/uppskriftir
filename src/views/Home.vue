@@ -4,7 +4,7 @@
     <h1>{{ title }}</h1>
   </div>
 
-  <div>
+  <div class="daydiv">
     <ul>
       <li v-for="day in menu" :key="day.day" @click="{{day.locked = !day.locked}}"> 
         <div class="day">
@@ -135,8 +135,12 @@ span.dayrecipe {
 
 .randombtn h2 {
   margin:auto;
+  padding:1rem;
 }
 
+.daydiv {
+  height:75%;
+}
 li {
   list-style-type:none;
 }
