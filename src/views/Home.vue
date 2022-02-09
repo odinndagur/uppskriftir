@@ -6,13 +6,16 @@
 
   <div>
     <ul>
-      <li v-for="day in menu" :key="day.day"> 
+      <li v-for="day in menu" :key="day.day" @click="{{day.locked = !day.locked}}"> 
         <div class="day">
         <b style="text-align:left;">{{day.day}}</b> 
         <br/>
         <span style="text-align:right;">{{day.recipe}}
-        <input type="checkbox" :id="day.day" v-model="day.locked">
-        <label :for="day.day"></label>
+        <span v-if="day.locked">
+        🔑
+        </span>
+        <!--<input type="checkbox" :id="day.day" v-model="day.locked">
+        <label :for="day.day"></label>-->
         </span>
         </div>
         </li>
