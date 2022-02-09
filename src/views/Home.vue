@@ -23,7 +23,7 @@
   </div>
 
   <div class="randombtn" @click="randomMenu">
-    Randomize
+    <h2>Randomize</h2>
   </div>
   </div>
 </template>
@@ -130,6 +130,10 @@ span.dayrecipe {
 
 .randombtn{
   background: rgba(100,100,100,100);
+  width:100%;
+}
+
+.randombtn h2 {
   margin:auto;
 }
 
