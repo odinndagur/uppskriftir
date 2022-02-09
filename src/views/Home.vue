@@ -1,6 +1,10 @@
 <template>
   <div id="app" class="container">
+  <div class="header">
     <h1>{{ title }}</h1>
+  </div>
+
+  <div>
     <ul>
       <li v-for="day in menu" :key="day.day"> 
         <div class="day">
@@ -13,7 +17,11 @@
         </div>
         </li>
     </ul>
+  </div>
+
+  <div>
     <button @click="randomMenu">random</button>
+  </div>
   </div>
 </template>
 
@@ -93,11 +101,11 @@ export default {
 .container {
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 80px auto 50px;
+  grid-template-rows: 40px auto 40px;
 }
 
 .day {
-  min-height: 4rem;
+  min-height: 2rem;
 }
 
 b.date {
